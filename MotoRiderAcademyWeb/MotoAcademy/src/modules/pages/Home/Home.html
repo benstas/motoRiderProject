@@ -1,0 +1,330 @@
+<template >
+  <div class="site">
+    <header>
+        
+      <div class="slds-grid slds-gutters " style="padding-left: 3rem; padding-right: 9rem;">
+          
+          <div class="slds-col slds-float_left navbutton">
+            <span><a href="/">HOME</a></span>
+          </div>
+          <div class="slds-col slds-float_left navbutton" onmouseover={showMenu} onmouseleave={hideMenu}>
+            <span><a href="/courses">COURSES</a></span>
+        </div>
+          <div class="slds-col slds-float_left navbutton">
+              <span><a href="/about">ABOUT</a></span>
+            </div>
+            <div class="slds-col slds-float_left navbutton">
+              <span>EVENTS</span>
+            </div>
+            <div class="slds-col slds-float_left navbutton">
+              <span>CONTACT</span>
+            </div>
+            <div class="slds-col slds-float_left navbutton join">
+              <span>ENROLL</span>
+            </div>
+            <div style="text-align: right;" class="slds-col slds-float_right slds-size_1-of-1 slds-large-size_4-of-12">
+              <img src="/public/assets/motoriderLogo.png" alt="logo" />
+            </div>
+        </div>
+        
+      
+  </header>
+  <div class="body">
+    <div class="coursesMenu">
+    <div  class={menuClass} onmouseover={showMenu} onmouseleave={hideMenu}>
+      <ul>
+          <li><a href="#">Base Training</a></li>
+          <li><a href="#">Track</a></li>
+          <li><a href="#">OffRoad</a></li>
+          <li style="border-bottom-left-radius: 1rem;
+          border-bottom-right-radius: 1rem;"><a href="#">City</a></li>
+      </ul>
+  </div>
+    </div>
+
+      <div class="page1">
+
+        <components-custom-carousel slides-data={slides}  ></components-custom-carousel>
+
+
+      </div>           
+      
+      <div class="page2">
+
+        <div class="entry">
+          <h1>Your academy journey starts here!
+
+          </h1>
+          <h3>We’ve created an enjoyable and supportive Advanced Rider course to give you additional knowledge and skills to make your on-road experiences safer and more fulfilling.
+              We want to help you enjoy your passion, grow friendships, and create memorable experiences on your bike, now and in the future.
+          </h3>
+        </div>
+
+
+        <div class="row1">
+          <div class="card1" onmouseover={handleMouseOver} onmouseleave={handleMouseLeave}>
+            <img src="/public/assets/race.jpeg" alt="logo" />
+            <h1>Track</h1>
+          </div>
+          <div class="card1 middle" onmouseover={handleMouseOver} onmouseleave={handleMouseLeave}>
+            <img src="/public/assets/city.jpeg" alt="logo" />
+            <h1>City</h1>
+          </div>
+          <div class="card1" onmouseover={handleMouseOver} onmouseleave={handleMouseLeave}>
+            <img src="/public/assets/enduro.webp" alt="logo" />
+            <h1>Off-road
+            </h1>
+          </div>
+        </div>
+        
+        </div>
+      <div class="page3">
+        <div class="row4">
+          <div class="card4">
+            <img src="/public/assets/add.jpg" alt="logo" />
+          </div>
+          
+          <div class="card4">
+            <h2>Course overview
+            </h2>
+            <p>What does becoming a more skilful rider mean to you? Better road positioning? Enhanced observation skills? Or simply greater bike control?
+
+              Whichever aspect of riding you’re looking to improve, our course brings your skills up to an advanced level, helping you to get more out of riding and preparing you for any on-road scenario.
+              
+              For the course, you’ll be paired with one of our highly skilled Observers, themselves Advanced Riders who hold an additional Institute of the Motor Industry qualification.
+              
+              Our Observers will meet you in location that is convenient for you both. You can discuss where you’d like to meet your Observer once you have been assigned to your Local Group.</p>
+          </div>
+        </div>
+        <div class="row4">
+          <div class="card4">
+            <h2>Course overview
+            </h2>
+            <p>What does becoming a more skilful rider mean to you? Better road positioning? Enhanced observation skills? Or simply greater bike control?
+
+              Whichever aspect of riding you’re looking to improve, our course brings your skills up to an advanced level, helping you to get more out of riding and preparing you for any on-road scenario.
+              
+              For the course, you’ll be paired with one of our highly skilled Observers, themselves Advanced Riders who hold an additional Institute of the Motor Industry qualification.
+              
+              Our Observers will meet you in location that is convenient for you both. You can discuss where you’d like to meet your Observer once you have been assigned to your Local Group.</p>
+          </div>
+          
+          <div class="card4">
+            <img src="/public/assets/slider3.jpeg" alt="logo" />
+          </div>
+        </div>
+
+        </div>
+      <div class="page4">
+          <div class="siteevent">
+            <div class="wrap">
+              <img src="/public/assets/ok.png" class="back" id="back" onclick={handleBackClick}/>
+        
+                <div class="gallery">
+                  <div class="eventRow">
+                    <div class="eventCard">
+                      
+                      <span><img src="/public/assets/yamaha.png" alt="logo" /> </span>
+                      <div><p>{EventDate1}</p></div>
+                      <div><h2>{EventName1}</h2></div>
+                      <div>
+                        <p>{EventLocation1}</p>
+                        <p>{EventType1}</p>
+                        <p>{EventStage1}</p>
+                      </div>
+                      
+                      
+                      
+                    </div>
+                    <div class="eventCard">
+                      
+                      <span><img src="/public/assets/adv2.jpg" alt="logo" /> </span>
+                      <h2>{EventName2}</h2>
+                      <p>{EventDate2}</p>
+                      
+                    </div>
+                    <div class="eventCard">
+                      
+                      <span><img src="/public/assets/lesson.jpg" alt="logo" /> </span>
+                      <h2>{EventName3}</h2>
+                      <p>{EventDate3}</p>
+                      
+                    </div>
+                    
+                  </div>
+                  <div class="eventRow">
+                    <div class="eventCard">
+                      
+                      <img src="/public/assets/racing.jpeg" alt="logo" /> 
+                      <h2>{EventName4}</h2>
+                      <p>{EventDate4}</p>
+                      
+                    </div>
+                    <div class="eventCard">
+                      
+                      <span><img src="/public/assets/back.jpeg" alt="logo" /> </span>
+                      <h2>{EventName5}</h2>
+                      <p>{EventDate5}</p>
+                      
+                    </div>
+                    <div class="eventCard">
+                      
+                      <span><img src="/public/assets/slider1.jpeg" alt="logo" /> </span>
+                      <h2>{EventName6}</h2>
+                      <p>{EventDate6}</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <img src="/public/assets/ok.png" class="forward" id="forward" onclick={handleForwardClick} />
+        
+            </div>
+          </div>
+          <button class="slds-button slds-button_success courseButton">View All Courses</button>
+  
+            
+          <div class="callbackcard">
+            <h1>REQUEST A CALLBACK</h1>
+            <p>If you need to speak to us about a general query fill in the form below and we will call you back within the same working day.</p>
+            
+            <div class="inputs">
+              <div class="slds-form form">
+                <div class="slds-form-element inputbox">
+                  <input type="text" id="text-input-id-1" placeholder="Name Surname"  class="slds-input" name="Name" value={leadRecord.Name} onchange={changeHandler}/>
+                </div>
+                <div class="slds-form-element inputbox">
+                  <input type="text" id="text-input-id-2" placeholder="Phone Number"  class="slds-input" name="Phone__c" value={leadRecord.Phone__c} onchange={changeHandler}/>
+                </div>
+                <div class="slds-form-element inputbox">
+                  <input type="text" id="text-input-id-3" placeholder="Email"  class="slds-input" name="email__c" value={leadRecord.email__c} onchange={changeHandler}/>
+                </div>
+                <div class="slds-form-element inputbox">
+                  <input type="text" id="text-input-id-4" placeholder="Subject"  class="slds-input"  name="description__c" value={leadRecord.description__c} onchange={changeHandler}/>
+                </div>
+                
+              </div>
+  
+            </div>
+            <button class="slds-button leadSendButton" onclick={formSubmitHandler}>Send</button>
+
+  
+  
+        </div>
+      </div>
+          
+       <div class="page5">
+          <div class="ins">
+            <div class="instructor">
+              <div class="wrap2">
+                <img src="/public/assets/ok.png" class="back2" id="back2" onclick={handleBack2Click}/>
+          
+                  <div class="gallery2" onmouseenter={handleMouseEnter} onmouseleave={handleMouseLeave}>
+                    <div class="eventRow2"  >
+                      <div class="eventCard2" >
+                        
+                        <span><img src="/public/assets/Ins4.jpg" alt="logo" /> </span>
+                        <h2>{instructorsName1}</h2>
+                        
+                      </div>
+                      <div class="eventCard2" >
+                        
+                        <span><img src="/public/assets/Ins3.jpg" alt="logo" /> </span>
+                        <h2>{instructorsName2}</h2>
+                        
+                      </div>
+                      <div class="eventCard2">
+                        
+                        <span><img src="/public/assets/lessonback.jpg" alt="logo" /> </span>
+                        <h2>{instructorsName3}</h2>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="eventRow2">
+                      <div class="eventCard2">
+                        
+                        <span><img src="/public/assets/Ins1.jpg" alt="logo" /> </span>
+                        <h2>{instructorsName4}</h2>
+                        
+                      </div>
+                      <div class="eventCard2">
+                        
+                        <span><img src="/public/assets/back25.jpg" alt="logo" /> </span>
+                        <h2>{instructorsName5}</h2>
+                        
+                      </div>
+                      <div class="eventCard2">
+                        
+                        <span><img src="/public/assets/Ins2.jpg" alt="logo" /> </span>
+                        <h2>{instructorsName6}</h2>
+                        
+                      </div>
+                    </div>
+          
+                  </div>
+                  <img src="/public/assets/ok.png" class="forward2" id="forward2" onclick={handleForward2Click} />
+          
+              </div>
+            </div>
+            
+          
+            <div class="blog">
+              <h1>GETTIN ON THE ROAD</h1>
+              <div class="row5">
+                <div class="card5">
+                  <img src="/public/assets/back.jpeg" alt="logo" />
+                  <h3>The art of motocycle maintenance</h3>
+                </div>
+                <div class="card5">
+                  <img src="/public/assets/racing.jpeg" alt="logo" />
+                  <h3>Motocycle public transport </h3>
+                </div>
+                <div class="card5">
+                  <img src="/public/assets/race.jpeg" alt="logo" />
+                  <h3>Choosing a roadbike</h3>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+          
+          
+       </div>
+
+  
+      <div class="page6">
+        <div class="mapArea">
+          <div class="row6">
+            <div class="card6">
+              <h1>FIND YOUR NEAREST LESSON</h1>
+            </div>
+            <div class="card6">
+              <img src="/public/assets/map.png" alt="logo" />
+            </div>
+          </div>
+        </div>
+        </div>
+  
+       <footer>
+        <div class="row2">
+        <div class="card2">
+          <img src="/public/assets/yamaha.png" alt="logo" />
+        </div>
+        
+        <div class="card2">
+          <img src="/public/assets/bmw.png" alt="logo" />
+        </div>
+        <div class="card2">
+          <img src="/public/assets/ktm.png" alt="logo" />
+        </div>
+        <div class="card2">
+          <img src="/public/assets/kawasaki.png" alt="logo" />
+        </div>
+      </div>
+    </footer>   
+            
+  </div>
+  
+  </div>
+</template>

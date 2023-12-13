@@ -1,0 +1,88 @@
+<template>
+    <div class="site">
+        <header>
+            
+          <div class="slds-grid slds-gutters " style="padding-left: 3rem; padding-right: 9rem;">
+              
+              <div class="slds-col slds-float_left navbutton">
+                <span>HOME</span>
+              </div>
+              <div class="slds-col slds-float_left navbutton" onmouseover={showMenu} onmouseleave={hideMenu}>
+                <span>COURSES</span>
+            </div>
+              <div class="slds-col slds-float_left navbutton">
+                  <span><a href="/about">ABOUT</a></span>
+                </div>
+                <div class="slds-col slds-float_left navbutton">
+                  <span>EVENTS</span>
+                </div>
+                <div class="slds-col slds-float_left navbutton">
+                  <span>CONTACT</span>
+                </div>
+                <div class="slds-col slds-float_left navbutton join">
+                  <span>ENROLL</span>
+                </div>
+                <div style="text-align: right;" class="slds-col slds-float_right slds-size_1-of-1 slds-large-size_4-of-12">
+                  <img src="/public/assets/motoriderLogo.png" alt="logo" />
+                </div>
+            </div>
+            
+          
+        </header>
+        <div class="body">
+            <div class="coursesMenu">
+                <div  class={menuClass} onmouseover={showMenu} onmouseleave={hideMenu}>
+                    <ul>
+                        <li><a href="#">Base Training</a></li>
+                        <li><a href="#">Track</a></li>
+                        <li><a href="#">OffRoad</a></li>
+                        <li><a href="#">City</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="title">
+                <h1>About Us</h1>
+            </div>
+            <div class="row4">
+                <div class="card4">
+                  <img src="/public/assets/lesson.jpg" alt="logo" />
+                </div>
+                
+                <div class="card4 page1">
+                  <h1>Learn To Drive, Drive With Safety And Control.</h1>
+                  <p>To learn to drive safely and with control, first familiarize yourself with the vehicle and obey traffic laws. Keep a safe following distance, use turn signals, and regularly check mirrors and blind spots.</p>
+                  <div class="list">
+                    <div class="video"></div>
+                    <ul>
+                        <li>Quick Tips and Advice
+                        </li>
+                        <li>Road test preparation
+                        </li>
+                        <li>We are certified
+                        </li>
+                        <li>Fast Service
+                        </li>
+                        <li>Basic driving skills
+                        </li>
+                        <li>Award Win</li>      
+                    </ul>
+                </div>
+                <div class="activebutton"><h2>Explore Courses</h2></div>
+
+                  
+                </div>
+              </div>
+              <div class="row4">
+                <div class="card4">
+                  <h2>Lorem ipsum dolor sit.</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, molestiae deserunt quo harum excepturi aperiam obcaecati atque maxime ex autem suscipit repellendus, in asperiores quas dolorum. Numquam eaque molestiae dignissimos quae beatae harum illo, porro corrupti culpa, consequuntur rerum deserunt?</p>
+                </div>
+                
+                <div class="card4">
+                  <img style="border-radius: 360px;" src="/public/assets/add.jpg" alt="logo" />
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</template>    

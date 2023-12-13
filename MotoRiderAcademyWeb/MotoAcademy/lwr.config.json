@@ -1,0 +1,54 @@
+{
+    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" } ,
+    {"npm":"lightning-base-components"}] },
+    "routes": [
+        {
+            "id": "Home",
+            "path": "/",
+            "rootComponent": "pages/Home",
+            "layoutTemplate": "$layoutsDir/index.html",
+            "bootstrap":{
+                "syntheticShadow": true
+            }
+        },
+        {
+            "id": "About",
+            "path": "/about",
+            "rootComponent": "pages/About",
+            "layoutTemplate": "$layoutsDir/index.html",
+            "bootstrap":{
+                "syntheticShadow": true
+            }
+        },
+        {
+            "id": "Event",
+            "path": "/event",
+            "rootComponent": "pages/Event",
+            "layoutTemplate": "$layoutsDir/index.html",
+            "bootstrap":{
+                "syntheticShadow": true
+            }
+        },
+        {
+            "id": "Login",
+            "path": "/login",
+            "rootComponent": "pages/Login",
+            "layoutTemplate": "$layoutsDir/index.html",
+            "bootstrap":{
+                "syntheticShadow": true
+            }
+        }
+    ],
+    "assets": [
+        {
+            "alias": "assetsDir",
+            "dir": "$rootDir/src/assets",
+            "urlPath": "/public/assets"
+        },
+        {
+            "alias": "favicon",
+            "file": "$rootDir/src/assets/favicon.ico",
+            "urlPath": "/favicon.ico"
+        }
+    ]
+}
